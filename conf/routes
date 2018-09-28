@@ -1,0 +1,13 @@
+#API entry point
+#HTTP methods  unique view source identifiers  link ot controller method
+
+GET        /                       controllers.HomeController.index
+GET        /test                   controllers.HomeController.test
+GET        /example                controllers.HomeController.example
+
+->         /v1/posts               v1.post.PostRouter
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file        controllers.Assets.at(path="/public", file)
+
